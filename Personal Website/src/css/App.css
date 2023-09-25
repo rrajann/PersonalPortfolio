@@ -1,0 +1,139 @@
+.app {
+  background-color: rgb(0, 0, 37);
+  color: white;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-individual {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-bottom: 20px; /* Space between each project */
+}
+
+.project-individual.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.project-individual img {
+  width: 80%; /* or any other preferred width */
+  max-width: 300px; /* setting a max width can help in responsiveness */
+  margin-bottom: 10px; /* Space between image and project name */
+}
+
+.project-display {
+  display: flex;
+  flex-direction: column;
+  font-size: 90%;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: rgb(37, 37, 0);
+  color:rgb(0, 0, 37);
+  height: 1000px;
+  width: 80%;
+  border-radius: 50px;
+}
+
+.introduction {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+
+.footer {
+  position: relative;
+  left: 0px;
+  font-size: 100px;
+}
+
+.text {
+  transition: transform 0.5s, opacity 0.25s;
+}
+
+.text.greeting {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.text.hello {
+  font-size: 3rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.fade-in {
+  opacity: 1;
+  z-index: 2; /* Ensure that the visible text is above the other */
+}
+
+.fade-out {
+  opacity: 0; 
+  z-index: 1; /* Keep the fading out text below the other */
+}
+
+.reveal-background {
+  display: grid;
+  height: 100%;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  position: relative;
+  overflow: hidden;
+  background-image: url("public/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.reveal-info {
+  position: relative;
+  top: 40%;
+  font-size: 5rem;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 10px 0 0 10px; /* Rounded corners on left side only */
+  padding: 10px 20px; /* Padding: top/bottom, left/right */
+  text-align: left; 
+  white-space: nowrap; /* Ensures text doesn't wrap to the next line */
+  width: 10000px; /* Very long length towards the right */
+}
+
+.reveal-info.rajan{
+  left: 50%;
+}
+
+.reveal-info.sapkota{
+  left: 60%;
+}
+
+.reveal-info.project{
+  left: 70%;
+  font-size: 2rem;
+}
+
+.text.reveal {
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s, opacity 0.5s ease-in;
+}
+

@@ -1,0 +1,28 @@
+{
+    "projects": [ 
+        { 
+            "name": "Project 1",
+            "img":"background.png", 
+            "description": "In this project I did this one thing", 
+            "featured": true, 
+            "github-link": null,
+            "demo": null
+        },
+        { 
+            "name": "Project 2", 
+            "img":"vite.svg",
+            "description": "In this project I did these two things",
+            "featured": false,
+            "github-link": null,
+            "demo": null
+        },
+        { 
+            "name": "Project 3", 
+            "img":"nav-button.png", 
+            "description": "In this project I did these three things", 
+            "featured": true,
+            "github-link": null,
+            "demo": null
+        }
+    ]
+}
