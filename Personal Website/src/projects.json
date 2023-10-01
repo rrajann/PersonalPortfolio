@@ -1,27 +1,46 @@
 {
     "projects": [ 
         { 
-            "name": "Project 1",
-            "img":"background.png", 
-            "description": "In this project I did this one thing", 
+            "name": "Wizards Vs Zombies",
+            "skills": "Java, JUnit 5, Java Swing, JSON",
+            "img":"wizardsvszombies_main.png", 
+            "description": "A Zelda inspired survival-type game where the player is placed in a single panel setting, and you must destroy incoming zombies. The zombies are approach based on your location and damage you upon contact. The player has a health bar, and everytime the enemy contacts the player, the player's health bar decreases. Game is over when player’s health bar is at zero.", 
             "featured": true, 
-            "github-link": null,
+            "documentation": "https://github.com/rrajann/wizards-vs-zombies",
             "demo": null
         },
         { 
-            "name": "Project 2", 
-            "img":"vite.svg",
-            "description": "In this project I did these two things",
+            "name": "Strength Tracker", 
+            "skills": "Java, JUnit 5, Java Swing, JSON",
+            "img":"strength_main.png",
+            "description": "A lift tracker targeted towards weightlifters, powerlifters and bodybuilders that allows them to better log their lifts and visualise their strength progression. Users can input exercises from a database of 1500+ exercises and log their sets + reps at specific dates. Based on their logged lifts, a line graph is displayed within each exercise that visualisses the users estimated one rep maxes over time.",
             "featured": false,
-            "github-link": null,
+            "documentation": "https://github.com/rrajann/StrengthTracker",
             "demo": null
         },
         { 
-            "name": "Project 3", 
-            "img":"nav-button.png", 
-            "description": "In this project I did these three things", 
+            "name": "Music Tempo and Popularity Visualiser", 
+            "skills": "Java, JUnit 5, Java Swing, JSON",
+            "img":"musicvisualiser_main.png", 
+            "description": "A graph that visualises how popularity of songs in different tempos have evolved over time. The program retrieves songs from a csv file containing 8000+ different songs between 1930 and 2010, and the user is allowed to input an arbitrary number of tempo ranges. The graph then plots how the average popularity of songs in those tempos changed every year.", 
             "featured": true,
-            "github-link": null,
+            "documentation": null,
+            "demo": null
+        },
+        {   "name": "Hexagon Maze",
+            "skills": "Java, JUnit 5, Java Swing, JSON",
+            "img": null,
+            "description": "hi",
+            "featured": false,
+            "documentation": null,
+            "demo": null
+        },
+        {   "name": "ASM Student Sorting",
+            "skills": "Java, JUnit 5, Java Swing, JSON",
+            "img": null,
+            "description": "hi",
+            "featured": false,
+            "documentation": null,
             "demo": null
         }
     ]

@@ -39,7 +39,6 @@
   align-items: center;
   background-color: rgb(37, 37, 0);
   color:rgb(0, 0, 37);
-  height: 1000px;
   width: 80%;
   border-radius: 50px;
 }
@@ -54,11 +53,7 @@
 }
 
 
-.footer {
-  position: relative;
-  left: 0px;
-  font-size: 100px;
-}
+
 
 .text {
   transition: transform 0.5s, opacity 0.25s;

@@ -14,8 +14,8 @@ export default function NavButton() {
 
     return (
         <div className="nav-button">
-            <div className="not-expanded" onClick={handleButtonClick}>
-                <img src="nav-button.png" width="20" height="20"></img>
+            <div className="button">
+                <img src="nav-button.png" className={expand ? "button-expanded" : "not-expanded"} width="20" height="20" onClick={handleButtonClick}></img>
             </div>
             {expand && 
             <div className="expanded">

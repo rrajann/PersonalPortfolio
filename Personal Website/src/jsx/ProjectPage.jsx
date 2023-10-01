@@ -29,7 +29,7 @@ export default function ProjectPage() {
 
     return (
         <div className="main">
-            <div className="footer">
+            <div className="header">
                 <Link to="/">Home</Link>
                 <Link to="/about-me">About me</Link>
                 <a href='resume.pdf'>Resume</a>
@@ -41,6 +41,9 @@ export default function ProjectPage() {
             <div className="display-box">
                 {data.projects.map(project => 
                     {return <Project imgSrc={project.img} projectName={project.name} projectDescription={project.description}></Project>})}
+            </div>
+            <div className="footer">
+                Designed, programmed and published by Rajan Sapkota
             </div>
         </div>
     )

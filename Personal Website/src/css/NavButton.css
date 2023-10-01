@@ -16,6 +16,7 @@
     justify-content: space-between;
     left: 20%;
     height: 120px;
+    z-index: 20;
   }
   
   .expanded ul {
@@ -23,15 +24,25 @@
   }
   
   
-  .not-expanded:hover {
-    transform: scale(1.5);
+  .button:hover {
+    transform: scale(1.3);
   }
   
-  .not-expanded {
+  .button {
     position: relative;
     width: 20px;
     height: 20px;
     cursor: pointer;
     transition: transform 1s;
     z-index: 20;
+  }
+
+  .not-expanded {
+    transition: transform, 0.5s;
+  }
+
+  .button-expanded {
+    transform: rotate(180deg);
+    transform-origin: 50%, 50%;
+    transition: transform, 0.5s;
   }

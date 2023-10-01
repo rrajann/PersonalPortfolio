@@ -65,7 +65,7 @@ export default function App() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.8} factor={1.75} speed={0.5}>
-          <div className="reveal-background"> 
+          <div className="reveal-background">
             <ParallaxLayer horizontal={true} offset={windowWidth * 0.0003} speed={0.8}>
               <div className='reveal-info rajan'>Rajan</div>
               <div className='reveal-info sapkota'>Sapkota</div>
@@ -77,8 +77,8 @@ export default function App() {
           <div className="project-display">
             <h1>Featured Projects</h1>
             <div className="project-list">
-            {projects.projects.filter(p => p.featured).map(pro => 
-            {return <Project imgSrc={pro.img} projectName={pro.name} projectDescription={pro.description}></Project>})}
+              {projects.projects.filter(p => p.featured).map(pro => 
+              {return <Project imgSrc={pro.img} projectName={pro.name} projectDescription={pro.description}></Project>})}
             </div>
           </div>
         </ParallaxLayer>
