@@ -2,6 +2,8 @@ import "../css/AboutMePage.css";
 import NavButton from "./NavButton";
 import { Link } from "react-router-dom";
 import { useState , useEffect } from "react";
+import ImageSlideShow from "./ImageSlideshow";
+import images from "../images.json";
 
 export default function AboutMePage() {
     const [displayNavButton, setNavButton] = useState(false);
@@ -36,15 +38,16 @@ export default function AboutMePage() {
             </div>
             <h1>About Me</h1>
             <div className="introduction">
-                <div className="img">
+                <div className="container">
+                    <img src="about-me-display.jpg"/>
                 </div>
                 <div className="description">
-                <p>
-                    Hi! My name is Rajan Sapkota and I am currently a third year UBC student studying Computer Science and Business. 
-                </p>
-                <p>
-                I love anything fitness related (especially powerlifting, volleyball and basketball), making random music playlists and somethign else. I am originally from Nepal, and lived in the Philippines for 11 years before heading to Vancouver for college. Due to my diverse upbringing, I can get along with pretty much anyone, and am always ready to try new experiences and tackle new challenges.
-                </p>
+                    <p>
+                        Hi! My name is Rajan Sapkota and I am currently a third year UBC student studying Computer Science and Business. 
+                    </p>
+                    <p>
+                    I love anything fitness related (especially powerlifting, volleyball and basketball), making random music playlists and somethign else. I am originally from Nepal, and lived in the Philippines for 11 years before heading to Vancouver for college. Due to my diverse upbringing, I can get along with pretty much anyone, and am always ready to try new experiences and tackle new challenges.
+                    </p>
                 </div>
             </div>
             <div className="footer">

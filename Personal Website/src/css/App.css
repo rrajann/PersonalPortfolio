@@ -37,7 +37,7 @@
   font-size: 90%;
   /* justify-content: center; */
   align-items: center;
-  background-color: rgb(37, 37, 0);
+  background-color: rgb(192, 202, 212);
   color:rgb(0, 0, 37);
   width: 80%;
   border-radius: 50px;
@@ -51,8 +51,6 @@
   align-items: center;
   z-index: 2;
 }
-
-
 
 
 .text {

@@ -4,6 +4,16 @@
     justify-content: space-between;
 }
 
-.img {
-    width: 200%;
+.container {
+    width: 100%;      /* Desired width */
+    margin-left: 50px;
+}
+
+.description {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container img {
+    width: 100%;
 }

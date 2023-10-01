@@ -1,0 +1,7 @@
+.image-slideshow {
+    display: flex;
+}
+
+#slideshow {
+    width: 80%;
+}
