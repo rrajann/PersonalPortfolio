@@ -54,4 +54,9 @@
     .description {
         width: auto;
     }
+
+    .footer {
+        font-size: small;
+        text-align: center;
+    }
 }
