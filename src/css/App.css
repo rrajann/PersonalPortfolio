@@ -94,7 +94,7 @@
   justify-content: center; /* Center content horizontally */
   position: relative;
   overflow: hidden;
-  background-image: url("public/background.png");
+  background-image: url("/background.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
