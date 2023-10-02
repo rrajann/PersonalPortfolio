@@ -13,11 +13,12 @@
 .display-box {
     display: flex;
     flex-direction: column;
-    background-color: rgb(37, 37, 0);
+    background-color: rgb(192, 202, 212);
     width: 80%;
     border-radius: 40px;
     font-size: large;
     margin-bottom: 20px;
+    color: rgb(0, 0, 37);
 }
 
 .header {
@@ -35,7 +36,7 @@
     font-size: medium;
     width: 100vw;
     padding: 10px 10px 10px 10px;
-    margin-top: 10px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(180deg, rgb(0, 0, 37), rgb(0, 0, 10));

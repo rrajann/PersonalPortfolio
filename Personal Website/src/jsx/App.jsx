@@ -14,17 +14,20 @@ export default function App() {
   const [nameIs, setNameIs] = useState("My name is");
   const [revealName, setRevealName] = useState(false);
   const parallaxRef = useRef(null);
+  const [parallaxPages, setPages] = useState(2.5);
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-  
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+        if (window.innerWidth < 720) setPages(3);
+        else setPages(2.5);
+      };
+    
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
 
   useEffect(() => {
     const handleScroll = () => {

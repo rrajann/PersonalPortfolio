@@ -40,7 +40,9 @@ export default function ProjectPage() {
             <h1>Projects</h1>
             <div className="display-box">
                 {data.projects.map(project => 
-                    {return <Project imgSrc={project.img} projectName={project.name} projectDescription={project.description}></Project>})}
+                    {return <Project id={project.name} imgSrc={project.img} 
+                    projectName={project.name} projectDescription={project.description} 
+                    skills={project.skills} documentation={project.documentation}></Project>})}
             </div>
             <div className="footer">
                 Designed, programmed and published by Rajan Sapkota

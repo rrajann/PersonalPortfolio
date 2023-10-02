@@ -7,7 +7,7 @@
             "description": "A Zelda inspired survival-type game where the player is placed in a single panel setting, and you must destroy incoming zombies. The zombies are approach based on your location and damage you upon contact. The player has a health bar, and everytime the enemy contacts the player, the player's health bar decreases. Game is over when player’s health bar is at zero.", 
             "featured": true, 
             "documentation": "https://github.com/rrajann/wizards-vs-zombies",
-            "demo": null
+            "demo": "https://github.com/rrajann/wizards-vs-zombies"
         },
         { 
             "name": "Strength Tracker", 
@@ -19,7 +19,7 @@
             "demo": null
         },
         { 
-            "name": "Music Tempo and Popularity Visualiser", 
+            "name": "Music Visualiser", 
             "skills": "Java, JUnit 5, Java Swing, JSON",
             "img":"musicvisualiser_main.png", 
             "description": "A graph that visualises how popularity of songs in different tempos have evolved over time. The program retrieves songs from a csv file containing 8000+ different songs between 1930 and 2010, and the user is allowed to input an arbitrary number of tempo ranges. The graph then plots how the average popularity of songs in those tempos changed every year.", 
@@ -29,8 +29,8 @@
         },
         {   "name": "Hexagon Maze",
             "skills": "Java, JUnit 5, Java Swing, JSON",
-            "img": null,
-            "description": "hi",
+            "img": "hexagon-maze_main.png",
+            "description": "A program that generates a arbitrary sized hexagon (parameterized on the inputted radius), adds walls to form a random maze, and creates a solution for every maze. Each hexagon tile is also rendered as a color corresponding to how close the tile is to the maze exit, from red (furthest from exit) to blue (on exit). This program works with many path finding algorithms, such as DFS and revised Dijkstra's.",
             "featured": false,
             "documentation": null,
             "demo": null

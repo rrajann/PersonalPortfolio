@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "../css/Project.css";
 
-export default function Project({ imgSrc, projectName, projectDescription, documentation, demo }) {
+export default function Project({ imgSrc, projectName, projectDescription, documentation, demo, skills }) {
 
     return (
         <div className="project-individual">
@@ -11,10 +11,11 @@ export default function Project({ imgSrc, projectName, projectDescription, docum
             </div>
             <div className="project-individual body">
                 <h2 className="title">{projectName}</h2>
+                <h5 className="skills">{skills}</h5>
                 <div className="description">{projectDescription}</div>
                 <div className="links">
-                    <a className="link" id="demo">Demo</a>
-                    <a className="link" id="documentation">Documentation</a>
+                    {/* <a className="link" id="demo">Demo</a> */}
+                    <a className="link" id="documentation" href={documentation}>Documentation</a>
                 </div>
             </div>
         </div>

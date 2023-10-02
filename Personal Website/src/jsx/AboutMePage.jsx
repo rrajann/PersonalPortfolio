@@ -27,7 +27,7 @@ export default function AboutMePage() {
     }, []);
 
     return (
-        <div className="main">
+        <div className="aboutme-main">
             <div className="header">
                 <Link to="/">Home</Link>
                 <Link to="/project-page">Projects</Link>
@@ -37,17 +37,30 @@ export default function AboutMePage() {
                 <NavButton></NavButton>
             </div>
             <h1>About Me</h1>
-            <div className="introduction">
+            <div className="about-me-introduction">
                 <div className="container">
                     <img src="about-me-display.jpg"/>
                 </div>
                 <div className="description">
                     <p>
-                        Hi! My name is Rajan Sapkota and I am currently a third year UBC student studying Computer Science and Business. 
+                        Hi! My name is Rajan Sapkota and I am currently a third year UBC student studying
+                         Computer Science and Business. 
                     </p>
                     <p>
-                    I love anything fitness related (especially powerlifting, volleyball and basketball), making random music playlists and somethign else. I am originally from Nepal, and lived in the Philippines for 11 years before heading to Vancouver for college. Due to my diverse upbringing, I can get along with pretty much anyone, and am always ready to try new experiences and tackle new challenges.
+                    I love anything fitness related (especially powerlifting, volleyball and basketball), 
+                    making random music playlists and implementing polymorphism in assembly (just kidding). I am originally from Nepal, 
+                    and lived in the Philippines for 11 years before heading to Vancouver for college.
+                     Due to my diverse upbringing, I can get along with pretty much anyone, and am always ready 
+                     to try new experiences and tackle new challenges.
                     </p>
+                    <div className="links">
+                        <a className="about-me-link" href="https://github.com/rrajann">
+                            <img src="github-logo.png" alt="Github" width={50}/>
+                        </a>
+                        <a className="about-me-link" href="https://www.linkedin.com/in/rajansapkota/">
+                            <img src="linkedin-logo.png" alt="Linkedin" width={50}/>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="footer">

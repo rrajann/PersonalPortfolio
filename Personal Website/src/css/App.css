@@ -32,6 +32,7 @@
 }
 
 .project-display {
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   font-size: 90%;
@@ -103,7 +104,7 @@
   position: relative;
   top: 40%;
   font-size: 5rem;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px 0 0 10px; /* Rounded corners on left side only */
   padding: 10px 20px; /* Padding: top/bottom, left/right */
   text-align: left; 
@@ -130,3 +131,8 @@
   transition: transform 0.5s, opacity 0.5s, opacity 0.5s ease-in;
 }
 
+@media only screen and (max-width: 720px) {
+  .project-display {
+    margin-top: -600px;
+  }
+}
