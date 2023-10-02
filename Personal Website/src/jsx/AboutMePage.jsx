@@ -41,7 +41,7 @@ export default function AboutMePage() {
                 <div className="container">
                     <img src="about-me-display.jpg"/>
                 </div>
-                <div className="description">
+                <div className="about-me-description">
                     <p>
                         Hi! My name is Rajan Sapkota and I am currently a third year UBC student studying
                          Computer Science and Business. 

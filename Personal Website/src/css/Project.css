@@ -16,6 +16,8 @@
 .description {
     font-size: 1em;
     text-align: justify;
+    width: 80%;
+    height: auto;
 }
 
 .skills {
@@ -76,21 +78,22 @@
         flex-direction: column;
     }
 
-    .project-individual.body{
+    #pro-body {
+        width: 100%;
+        margin-bottom: 0;
         margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 500px;
     }
 
     .image {
         width: 80%;
         margin-bottom: 10px;
+        transform: translate(-10px, 0);
     }
 
     .title {
         margin-top: 0px;
         text-align: center;
+        font-size: 25px;
     }
 
     .description {

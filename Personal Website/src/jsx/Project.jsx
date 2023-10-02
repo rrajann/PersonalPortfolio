@@ -9,10 +9,10 @@ export default function Project({ imgSrc, projectName, projectDescription, docum
             <div className="image">
                 <img src={imgSrc} alt={projectName}></img>
             </div>
-            <div className="project-individual body">
+            <div className="project-individual body" id="pro-body">
                 <h2 className="title">{projectName}</h2>
                 <h5 className="skills">{skills}</h5>
-                <div className="description">{projectDescription}</div>
+                <div className="description" id="project-desc">{projectDescription}</div>
                 <div className="links">
                     {/* <a className="link" id="demo">Demo</a> */}
                     <a className="link" id="documentation" href={documentation}>Documentation</a>
