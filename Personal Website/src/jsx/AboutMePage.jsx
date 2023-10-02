@@ -27,7 +27,7 @@ export default function AboutMePage() {
     }, []);
 
     return (
-        <div className="aboutme-main">
+        <div className="main">
             <div className="header">
                 <Link to="/">Home</Link>
                 <Link to="/project-page">Projects</Link>
@@ -50,10 +50,10 @@ export default function AboutMePage() {
                     I love anything fitness related (especially powerlifting, volleyball and basketball), 
                     making random music playlists and implementing polymorphism in assembly (just kidding). I am originally from Nepal, 
                     and lived in the Philippines for 11 years before heading to Vancouver for college.
-                     Due to my diverse upbringing, I can get along with pretty much anyone, and am always ready 
-                     to try new experiences and tackle new challenges.
+                     Due to my diverse upbringing, I can get along with pretty much anyone, and I am always open 
+                     to new experiences and excited to tackle new challenges.
                     </p>
-                    <div className="links">
+                    <div className="links" id="about-me-links">
                         <a className="about-me-link" href="https://github.com/rrajann">
                             <img src="github-logo.png" alt="Github" width={50}/>
                         </a>
