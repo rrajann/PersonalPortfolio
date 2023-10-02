@@ -81,7 +81,8 @@ export default function App() {
             <h1>Featured Projects</h1>
             <div className="project-list">
               {projects.projects.filter(p => p.featured).map(pro => 
-              {return <Project imgSrc={pro.img} projectName={pro.name} projectDescription={pro.description}></Project>})}
+              {return <Project imgSrc={pro.img} projectName={pro.name} projectDescription={pro.description} skills={pro.skills}
+              documentation={pro.documentation}></Project>})}
             </div>
           </div>
         </ParallaxLayer>
