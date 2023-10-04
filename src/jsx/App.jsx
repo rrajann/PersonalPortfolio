@@ -15,6 +15,8 @@ export default function App() {
   const [revealName, setRevealName] = useState(false);
   const parallaxRef = useRef(null);
   const [parallaxPages, setPages] = useState(2.5);
+  const [revealClickMe, setRevealClickMe] = useState(true);
+  const [revealScrollDown, setRevealScrollDown] = useState(true);
 
   useEffect(() => {
       const handleResize = () => {
@@ -35,6 +37,8 @@ export default function App() {
         // Using current from Parallax's internal state
         const currentScroll = parallaxRef.current.current;
         setRevealName(currentScroll >= 0.5);
+        setRevealClickMe(currentScroll == 0);
+        setRevealScrollDown(currentScroll == 0);
       }
     };
 
@@ -65,6 +69,20 @@ export default function App() {
           <div className="introduction">
             <div className={`text hello ${revealName ? 'fade-out' : 'fade-in'}`} onClick={handleHelloClick}> {hello} </div>
             <div className={`text greeting ${revealName ? 'fade-in' : 'fade-out'}`} onClick={handleMyNameClick}>{nameIs}</div>
+            {revealClickMe ? 
+            <div className='click-me'>
+              <img src='nav-button.png'/>
+              Click Me
+            </div> 
+            : 
+            <div/>}
+            {revealScrollDown ? 
+            <div className='scroll-down'>
+              Scroll Down
+              <img src='nav-button.png'/>
+              </div>
+            : 
+            <div/>}
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.8} factor={1.75} speed={0.5}>

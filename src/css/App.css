@@ -18,6 +18,46 @@
   margin-bottom: 20px; /* Space between each project */
 }
 
+.click-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  font-weight: 100;
+  /* transform: translate(40px, 60px); */
+  position: absolute;
+  top: 55%;
+  animation: blink 2s infinite;
+  user-select: none;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 75%;
+  animation: blink 2s infinite;
+  font-weight: 100;
+  user-select: none;
+}
+
+.scroll-down img {
+  transform: rotate(90deg);
+  width: 20px;
+}
+
+.click-me img {
+  transform: rotate(-90deg);
+  width: 20px;
+}
+
 .project-individual.body {
   display: flex;
   flex-direction: column;
@@ -53,6 +93,9 @@
   z-index: 2;
 }
 
+.text::selection {
+  background: none;
+}
 
 .text {
   transition: transform 0.5s, opacity 0.25s;

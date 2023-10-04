@@ -44,7 +44,7 @@ export default function AboutMePage() {
                 <div className="about-me-description">
                     <p>
                         Hi! My name is Rajan Sapkota and I am currently a third year UBC student studying
-                         Computer Science and Business. 
+                         Computer Science and Business.
                     </p>
                     <p>
                     I love anything fitness related (especially powerlifting, volleyball and basketball), 
