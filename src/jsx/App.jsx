@@ -53,8 +53,8 @@ export default function App() {
 
   function handleMyNameClick() {
     if (nameIs === "My name is") setNameIs("मेरो नाम");
-    else if (nameIs === "मेरो नाम") setNameIs("Me llama");
-    else if (nameIs === "Me llama") setNameIs("My name is");
+    else if (nameIs === "मेरो नाम") setNameIs("Me llamo");
+    else if (nameIs === "Me llamo") setNameIs("My name is");
   }
 
   return (
