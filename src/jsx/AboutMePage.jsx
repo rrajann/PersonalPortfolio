@@ -49,7 +49,7 @@ export default function AboutMePage() {
                     <p>
                     I love anything fitness related (especially powerlifting, volleyball and basketball), 
                     making random music playlists and implementing polymorphism in assembly (just kidding). I am originally from Nepal, 
-                    and lived in the Philippines for 11 years before heading to Vancouver for college.
+                    and lived in the Philippines for 11 years before heading to Vancouver to study Computer Science and Business at UBC.
                      Due to my diverse upbringing, I can get along with pretty much anyone, and I am always open 
                      to new experiences and excited to tackle new challenges.
                     </p>
