@@ -64,6 +64,9 @@ export default function App() {
   return (
     <div className="app">
       <NavButton></NavButton>
+      <a className="homepage-github-logo" href="https://github.com/rrajann">
+        <img src='github-logo.png'/>
+      </a>
       <Parallax ref={parallaxRef} pages={2.5}>
         <ParallaxLayer offset={0}>
           <div className="introduction">

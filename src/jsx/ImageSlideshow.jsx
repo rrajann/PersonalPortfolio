@@ -21,7 +21,7 @@ export default function ImageSlideShow( {listOfImages} ) {
     return (
         <div className="image-slideshow">
             <button onClick={handleLeftClick}>
-                left
+                `left`
             </button>
             <img src={images[imageIndex]} alt="Image" id="slideshow"/>
             <button onClick={handleRightClick}>

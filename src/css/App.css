@@ -48,6 +48,7 @@
   user-select: none;
 }
 
+
 .scroll-down img {
   transform: rotate(90deg);
   width: 20px;
@@ -117,6 +118,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+
+.homepage-github-logo {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column;
+}
+
+.homepage-github-logo img {
+  height: 40px;
+  filter: invert(1);
 }
 
 .fade-in {
