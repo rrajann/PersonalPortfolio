@@ -64,7 +64,7 @@ export default function App() {
   return (
     <div className="app">
       <NavButton></NavButton>
-      <a className="homepage-github-logo" href="https://github.com/rrajann">
+      <a className="homepage-github-logo" href="https://github.com/rrajann" target="_blank">
         <img src='github-logo.png'/>
       </a>
       <Parallax ref={parallaxRef} pages={2.5}>
