@@ -105,6 +105,7 @@ export default function App() {
               {return <Project imgSrc={pro.img} projectName={pro.name} projectDescription={pro.description} skills={pro.skills}
               documentation={pro.documentation}></Project>})}
             </div>
+            <Link to="/project-page" className='link-app'>All Projects</Link>
           </div>
         </ParallaxLayer>
       </Parallax>
