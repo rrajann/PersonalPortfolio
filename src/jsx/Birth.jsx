@@ -13,5 +13,5 @@ export default function Birth() {
         <Route path="/about-me" element={<AboutMePage></AboutMePage>}/>
       </Routes>
     </Router>
-  );
+  )
 }
