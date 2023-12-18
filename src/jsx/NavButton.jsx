@@ -22,7 +22,7 @@ export default function NavButton() {
                 <Link to="/">Home</Link>
                 <Link to="/project-page">Projects</Link>
                 <Link to="/about-me">About Me</Link>
-                <a href='resume.pdf'>Resume</a>
+                <a href='resume.pdf' target="_blank">Resume</a>
             </div>}
         </div>
     )

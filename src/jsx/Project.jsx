@@ -15,7 +15,7 @@ export default function Project({ imgSrc, projectName, projectDescription, docum
                 <div className="description" id="project-desc">{projectDescription}</div>
                 <div className="links">
                     {/* <a className="link" id="demo">Demo</a> */}
-                    <a className="link" id="documentation" href={documentation}>Documentation</a>
+                    <a className="link" id="documentation" href={documentation} target="_blank" >Documentation</a>
                 </div>
             </div>
         </div>
