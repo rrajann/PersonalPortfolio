@@ -1,11 +1,27 @@
 {
     "projects": [ 
+        {   "name": "Musicultured",
+            "skills": "React, Express.js, Oracle SQL",
+            "img": "musicultured-img.png",
+            "description": "A music social media app where users can bond over their shared passion for music by displaying their favourite artists, albums, songs and events in their profiles. Users can interact with each other by commenting on other's profiles regarding their music taste.",
+            "featured": true,
+            "documentation": null,
+            "demo": null
+        },
+        {   "name": "Switch!",
+            "skills": "React, Socket.io, Express.js",
+            "img": "switch_main.png",
+            "description": "A hackathon project tackling the hackathon's theme of diversity and inclusion. It allows users to chat with each other in any language, and every chat received and sent by the user will be translated to the user's preferred language in real-time.",
+            "featured": true,
+            "documentation": "https://github.com/Shoryaveer/nwTranslate.git",
+            "demo": null
+        },
         { 
             "name": "Wizards Vs Zombies",
             "skills": "Java, JUnit 5, Java Swing, JSON",
             "img":"wizardsvszombies_main.png", 
             "description": "A Zelda inspired survival-type game where the player is placed in a single panel setting, and you must destroy incoming zombies. The zombies are approach based on your location and damage you upon contact. The player has a health bar, and every time the enemy contacts the player, the player's health bar decreases. Game is over when player’s health bar is at zero.", 
-            "featured": true, 
+            "featured": false, 
             "documentation": "https://github.com/rrajann/wizards-vs-zombies",
             "demo": "https://github.com/rrajann/wizards-vs-zombies"
         },
@@ -14,11 +30,11 @@
             "skills": "React, CSS, Node.js",
             "img":"strength_main.png",
             "description": "A lift tracker targeted towards weightlifters, powerlifters and bodybuilders that allows them to better log their lifts and visualise their strength progression. Users can input exercises from a database of 1500+ exercises and log their sets + reps at specific dates. Based on their logged lifts, a line graph is displayed within each exercise that visualisses the users estimated one rep maxes over time.",
-            "featured": true,
+            "featured": false,
             "documentation": "https://github.com/rrajann/StrengthTracker",
             "demo": null
         },
-        { 
+        {
             "name": "Music Visualiser", 
             "skills": "Python, Matplotlib, Unittest",
             "img":"musicvisualiser_main.png", 
