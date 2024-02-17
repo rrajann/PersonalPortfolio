@@ -14,7 +14,7 @@
             "description": "A music social media app where users can bond over their shared passion for music by displaying their favourite artists, albums, songs and events in their profiles. Users can interact with each other by commenting on other's profiles regarding their music taste.",
             "featured": false,
             "documentation": "https://github.com/ftoner1/MusicCultured",
-            "demo": "null"
+            "demo": null
         },
         {   "name": "Switch!",
             "skills": "React, Socket.io, Express.js",
