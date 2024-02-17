@@ -42,7 +42,7 @@ export default function ProjectPage() {
                 {data.projects.map(project => 
                     {return <Project id={project.name} imgSrc={project.img} 
                     projectName={project.name} projectDescription={project.description} 
-                    skills={project.skills} documentation={project.documentation}></Project>})}
+                    skills={project.skills} documentation={project.documentation} demo={project.demo}></Project>})}
             </div>
             <div className="footer">
                 Designed, programmed and published by Rajan Sapkota

@@ -14,11 +14,9 @@ export default function Project({ imgSrc, projectName, projectDescription, docum
                 <h5 className="skills">{skills}</h5>
                 <div className="description" id="project-desc">{projectDescription}</div>
                 <div className="links">
-                    {/* <div className="parent-link">
-                        <a className="link" id="demo">Demo</a>
-                        {!demo &&
-                        <div>Demo Not Available</div>}
-                    </div> */}
+                    <div className="parent-link">
+                        {demo ? <a className="link" id="demo" href={demo} target="_blank">Demo</a> : <div>Demo Not Available</div>}
+                    </div>
                     <div className="parent-link">
                         <a className="link" id="documentation" href={documentation} target="_blank" >Documentation</a>
                         {/* {!documentation &&

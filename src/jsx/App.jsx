@@ -103,7 +103,7 @@ export default function App() {
             <div className="project-list">
               {projects.projects.filter(p => p.featured).map(pro => 
               {return <Project imgSrc={pro.img} projectName={pro.name} projectDescription={pro.description} skills={pro.skills}
-              documentation={pro.documentation}></Project>})}
+              documentation={pro.documentation} demo={pro.demo}></Project>})}
             </div>
             <Link to="/project-page" className='link-app'>All Projects</Link>
           </div>

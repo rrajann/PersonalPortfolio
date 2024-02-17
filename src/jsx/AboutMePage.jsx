@@ -54,10 +54,10 @@ export default function AboutMePage() {
                      to new experiences and excited to tackle new challenges.
                     </p>
                     <div className="links" id="about-me-links">
-                        <a className="about-me-link" href="https://github.com/rrajann">
+                        <a className="about-me-link" href="https://github.com/rrajann" target="_blank">
                             <img src="github-logo.png" alt="Github" width={50}/>
                         </a>
-                        <a className="about-me-link" href="https://www.linkedin.com/in/rajansapkota/">
+                        <a className="about-me-link" href="https://www.linkedin.com/in/rajansapkota/" target="_blank">
                             <img src="linkedin-logo.png" alt="Linkedin" width={50}/>
                         </a>
                     </div>
