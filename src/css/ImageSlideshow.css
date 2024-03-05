@@ -1,5 +1,6 @@
 .image-slideshow {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     -webkit-user-select: none; /* Safari */
@@ -9,22 +10,32 @@
 }
 
 #slideshow {
-    width: 90%;
+    width: 100%;
     background-size: cover; /* Cover the entire div */
     background-position: center; /* Center the background image */
 }
 
-.next-image{
+.arrows {
+    display: flex;
+    justify-content: center;
+}
+
+.next-image {
     position: absolute;
+    margin: 20px;
+    transform: scale(1) translate(0, 0); /* Define an explicit initial transform state */
+    transition: all 0.5s ease;
+    overflow: visible;
 }
 
 #first {
-    left: 0;
+    left: 25%
+}
+#second {
+    right: 25%
 }
 
-#second {
-    right: 0;
-}
-.next-image :hover{
+.next-image:hover{
     cursor: pointer;
+    transform: scale(1.2);
 }
