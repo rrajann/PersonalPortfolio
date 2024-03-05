@@ -7,6 +7,7 @@ import '../readJSON';
 import ProjectPage from "./ProjectPage";
 import projects from "../projects.json"
 import NavButton from './NavButton';
+import ImageSlideShow from './ImageSlideshow';
 
 export default function App() {
   const [hello, setHello] = useState("Hello");

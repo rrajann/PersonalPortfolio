@@ -1,13 +1,14 @@
 
 import React, { useState } from "react";
 import "../css/Project.css";
+import ImageSlideShow from "./ImageSlideshow";
 
 export default function Project({ imgSrc, projectName, projectDescription, documentation, demo, skills }) {
 
     return (
         <div className="project-individual">
             <div className="image">
-                <img src={imgSrc} alt={projectName}></img>
+                <ImageSlideShow listOfImages={imgSrc}></ImageSlideShow>
             </div>
             <div className="project-individual body" id="pro-body">
                 <h2 className="title">{projectName}</h2>

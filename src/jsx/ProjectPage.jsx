@@ -4,6 +4,7 @@ import NavButton from "./NavButton";
 import React, { useEffect, useState} from "react";
 import data from "../projects.json";
 import Project from "./Project";
+import ImageSlideShow from "./ImageSlideshow";
 
 export default function ProjectPage() {
 

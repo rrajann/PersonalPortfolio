@@ -2,7 +2,7 @@
     "projects": [ 
         {   "name": "MediFetch AI",
             "skills": "Machine Learning, React, Pinecone",
-            "img": "medifetch_main.png",
+            "img": ["/medifetch_main.png", "/medifetch-2.png", "/medifetch-3.png", "/medifetch-4.png", "/medifetch-5.png"],
             "description": "MediFetch AI revolutionizes patient care by streamlining the way medical professionals access and understand a patient's medical history. By utilizing advanced NLP technology, this platform allows users to submit their medical documents, which are then efficiently processed and organized. When a healthcare professional needs specific information, MediFetch AI queries these documents and displays the most relevant sections, tailored to the query.",
             "featured": true,
             "documentation": "https://github.com/kazuuoooo/NWHACKS2024",
@@ -10,7 +10,7 @@
         },
         {   "name": "Musicultured",
             "skills": "React, Express.js, Oracle SQL",
-            "img": "musicultured-img.png",
+            "img": ["/musicultured-img.png"],
             "description": "A music social media app where users can bond over their shared passion for music by displaying their favourite artists, albums, songs and events in their profiles. Users can interact with each other by commenting on other's profiles regarding their music taste.",
             "featured": false,
             "documentation": "https://github.com/ftoner1/MusicCultured",
@@ -18,7 +18,7 @@
         },
         {   "name": "Switch!",
             "skills": "React, Socket.io, Express.js",
-            "img": "switch_main.png",
+            "img": ["/switch_main.png", "/switch-2.png"],
             "description": "A hackathon project tackling the hackathon's theme of diversity and inclusion. It allows users to chat with each other in any language, and every chat received and sent by the user will be translated to the user's preferred language in real-time.",
             "featured": true,
             "documentation": "https://github.com/Shoryaveer/nwTranslate.git",
@@ -27,7 +27,7 @@
         { 
             "name": "Wizards Vs Zombies",
             "skills": "Java, JUnit 5, Java Swing, JSON",
-            "img":"wizardsvszombies_main.png", 
+            "img":["/wizardsvszombies_main.png", "/wizardsvszombies_main2.png"], 
             "description": "A Zelda inspired survival-type game where the player is placed in a single panel setting, and you must destroy incoming zombies. The zombies are approach based on your location and damage you upon contact. The player has a health bar, and every time the enemy contacts the player, the player's health bar decreases. Game is over when player’s health bar is at zero.", 
             "featured": false, 
             "documentation": "https://github.com/rrajann/wizards-vs-zombies",
@@ -36,7 +36,7 @@
         { 
             "name": "Strength Tracker", 
             "skills": "React, CSS, Node.js",
-            "img":"strength_main.png",
+            "img":["/strength_main.png"],
             "description": "A lift tracker targeted towards weightlifters, powerlifters and bodybuilders that allows them to better log their lifts and visualise their strength progression. Users can input exercises from a database of 1500+ exercises and log their sets + reps at specific dates. Based on their logged lifts, a line graph is displayed within each exercise that visualisses the users estimated one rep maxes over time.",
             "featured": false,
             "documentation": "https://github.com/rrajann/StrengthTracker",
@@ -45,7 +45,7 @@
         {
             "name": "Music Visualiser", 
             "skills": "Python, Matplotlib, Unittest",
-            "img":"musicvisualiser_main.png", 
+            "img":["/musicvisualiser_main.png"], 
             "description": "A graph that visualises how popularity of songs in different tempos have evolved over time. The program retrieves songs from a csv file containing 8000+ different songs between 1930 and 2010, and the user is allowed to input an arbitrary number of tempo ranges. The graph then plots how the average popularity of songs in those tempos changed every year.", 
             "featured": false,
             "documentation": "musicvisualiser_doc.pdf",
@@ -53,18 +53,10 @@
         },
         {   "name": "Hexagon Maze",
             "skills": "C++, Valgrind",
-            "img": "hexagon-maze_main.png",
+            "img": ["/hexagon-maze_main.png"],
             "description": "A program that generates a arbitrary sized hexagon (parameterized on the inputted radius), adds walls to form a random maze, and creates a solution for every maze. Each hexagon tile is also rendered as a color corresponding to how close the tile is to the maze exit, from red (furthest from exit) to blue (on exit). This program works with many path finding algorithms, such as DFS and revised Dijkstra's.",
             "featured": false,
             "documentation": "https://github.com/rrajann/HexagonMaze",
-            "demo": null
-        },
-        {   "name": "ASM Student Sorting",
-            "skills": "ARM Assembly (RISC architecture)",
-            "img": "asx_main.png",
-            "description": "A C-like program written in Assembly. Given a class consisting of students, where each student has a student id and grades for multiple projects, it computes the average for each student. Then, it sorts the list of students according to their average grade, using the bubble-sort algorithm.",
-            "featured": false,
-            "documentation": "https://github.com/rrajann/StudentsSortingAssemblyProgram",
             "demo": null
         }
     ]
