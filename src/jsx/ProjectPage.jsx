@@ -12,7 +12,6 @@ export default function ProjectPage() {
     
     useEffect(() => {
     const checkScroll = () => {
-            console.log(window.scrollY);
             if (window.scrollY > 70) {  // Show NavButton after scrolling 100px
                 setNavButton(true);
             } else {

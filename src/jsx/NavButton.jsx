@@ -9,7 +9,6 @@ export default function NavButton() {
     function handleButtonClick() {
         setExpand(!expand);
         event.stopPropagation();
-        console.log("button clicked");
       }
 
     return (
