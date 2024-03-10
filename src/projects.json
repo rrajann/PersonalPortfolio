@@ -5,7 +5,7 @@
             "img": ["/medifetch_main.png", "/medifetch-2.png", "/medifetch-3.png", "/medifetch-4.png", "/medifetch-5.png"],
             "description": "MediFetch AI revolutionizes patient care by streamlining the way medical professionals access and understand a patient's medical history. By utilizing advanced NLP technology, this platform allows users to submit their medical documents, which are then efficiently processed and organized. When a healthcare professional needs specific information, MediFetch AI queries these documents and displays the most relevant sections, tailored to the query.",
             "featured": true,
-            "documentation": "https://github.com/kazuuoooo/NWHACKS2024",
+            "documentation": "https://github.com/rrajann/MediFetchAI",
             "demo": "https://devpost.com/software/medifetch-ai?ref_content=my-projects-tab&ref_feature=my_projects"
         },
         {   "name": "Musicultured",
