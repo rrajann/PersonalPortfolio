@@ -19,7 +19,7 @@ export default function Project({ imgSrc, projectName, projectDescription, docum
                         {demo ? <a className="link" id="demo" href={demo} target="_blank">Demo</a> : <div>Demo Not Available</div>}
                     </div>
                     <div className="parent-link">
-                        <a className="link" id="documentation" href={documentation} target="_blank" >Documentation</a>
+                        {documentation ? <a className="link" id="documentation" href={documentation} target="_blank" >Documentation</a> : <div>Not open-source</div>}
                         {/* {!documentation &&
                         <div>Documentation Not Available</div>} */}
                     </div>

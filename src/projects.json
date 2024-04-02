@@ -1,5 +1,13 @@
 {
     "projects": [ 
+        {   "name": "Notifynd",
+            "skills": "Web Scraping, SQL, AWS",
+            "img": ["/notifynd-1.png", "/notifynd-2.png", "/notifynd-3.png"],
+            "description": "Notifynd streamlines event ticket purchasing by automating the search for ideal tickets based on user preferences. Utilizing advanced web scraping techniques, it monitors numerous events in real-time, identifying tickets that match users' specified criteria, such as price range and seating area. Upon finding a match, the system promptly notifies the user, ensuring they never miss out on their desired tickets",
+            "featured": true,
+            "documentation": null,
+            "demo": "https://www.notifynd.app"
+        },
         {   "name": "MediFetch AI",
             "skills": "Machine Learning, React, Pinecone",
             "img": ["/medifetch_main.png", "/medifetch-2.png", "/medifetch-3.png", "/medifetch-4.png", "/medifetch-5.png"],
@@ -20,7 +28,7 @@
             "skills": "React, Socket.io, Express.js",
             "img": ["/switch_main.png", "/switch-2.png"],
             "description": "A hackathon project tackling the hackathon's theme of diversity and inclusion. It allows users to chat with each other in any language, and every chat received and sent by the user will be translated to the user's preferred language in real-time.",
-            "featured": true,
+            "featured": false,
             "documentation": "https://github.com/Shoryaveer/nwTranslate.git",
             "demo": "https://www.youtube.com/watch?v=G7uPbRqac2c&ab_channel=RajanSapkota"
         },
