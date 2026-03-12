@@ -34,7 +34,6 @@ ExternalLink.propTypes = {
 export default function App() {
   return (
     <div className="app">
-      <div className="page-gradient" />
       <div className="shell">
         <header className="top-bar">
           <a href="#" className="wordmark">
