@@ -1,115 +1,112 @@
-import React, { useState, useEffect, useRef } from 'react';
-import '../css/App.css';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Project from './Project';
-import { Link } from 'react-router-dom';
-import '../readJSON';
-import ProjectPage from "./ProjectPage";
-import projects from "../projects.json"
-import NavButton from './NavButton';
-import ImageSlideShow from './ImageSlideshow';
+import PropTypes from "prop-types";
+import "../css/App.css";
+import SectionBlock from "./components/SectionBlock";
+import {
+  BUILT_SYSTEMS,
+  CURRENT_FOCUS,
+  EXTERNAL_LINKS,
+  NAV_LINKS,
+  POSITIONING,
+  PROFILE,
+  RABBIT_HOLES,
+  RABBIT_HOLES_SECTION,
+} from "../constants/landingContent";
+
+function ExternalLink({ label, href, external = false }) {
+  return (
+    <a
+      href={href}
+      className="pill-link"
+      target={external ? "_blank" : undefined}
+      rel={external ? "noreferrer" : undefined}
+    >
+      {label}
+    </a>
+  );
+}
+
+ExternalLink.propTypes = {
+  external: PropTypes.bool,
+  href: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+};
 
 export default function App() {
-  const [hello, setHello] = useState("Hello");
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [nameIs, setNameIs] = useState("My name is");
-  const [revealName, setRevealName] = useState(false);
-  const parallaxRef = useRef(null);
-  const [parallaxPages, setPages] = useState(2.5);
-  const [revealClickMe, setRevealClickMe] = useState(true);
-  const [revealScrollDown, setRevealScrollDown] = useState(true);
-
-  useEffect(() => {
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-        if (window.innerWidth < 720) setPages(3);
-        else setPages(2.5);
-      };
-    
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (parallaxRef.current) {
-        // Using current from Parallax's internal state
-        const currentScroll = parallaxRef.current.current;
-        setRevealName(currentScroll >= 0.5);
-        setRevealClickMe(currentScroll == 0);
-        setRevealScrollDown(currentScroll == 0);
-      }
-    };
-
-    const container = parallaxRef.current.container.current;
-    container.addEventListener('scroll', handleScroll);
-    return () => {
-      container.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  function handleHelloClick() {
-    if (hello === "Hello") setHello("नमस्ते");
-    else if (hello === "नमस्ते") setHello("Hola");
-    else if (hello === "Hola") setHello("Hello");
-  }
-
-  function handleMyNameClick() {
-    if (nameIs === "My name is") setNameIs("मेरो नाम");
-    else if (nameIs === "मेरो नाम") setNameIs("Me llamo");
-    else if (nameIs === "Me llamo") setNameIs("My name is");
-  }
-
   return (
     <div className="app">
-      <NavButton></NavButton>
-      <a className="homepage-github-logo" href="https://github.com/rrajann" target="_blank">
-        <img src='github-logo.png'/>
-      </a>
-      <Parallax ref={parallaxRef} pages={2.5}>
-        <ParallaxLayer offset={0}>
-          <div className="introduction">
-            <div className={`text hello ${revealName ? 'fade-out' : 'fade-in'}`} onClick={handleHelloClick}> {hello} </div>
-            <div className={`text greeting ${revealName ? 'fade-in' : 'fade-out'}`} onClick={handleMyNameClick}>{nameIs}</div>
-            {revealClickMe ? 
-            <div className='click-me'>
-              <img src='nav-button.png'/>
-              Click Me
-            </div> 
-            : 
-            <div/>}
-            {revealScrollDown ? 
-            <div className='scroll-down'>
-              Scroll Down
-              <img src='nav-button.png'/>
-              </div>
-            : 
-            <div/>}
-          </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0.8} factor={1.75} speed={0.5}>
-          <div className="reveal-background">
-            <ParallaxLayer horizontal={true} offset={windowWidth * 0.0003} speed={0.8}>
-              <div className='reveal-info rajan'>Rajan</div>
-              <div className='reveal-info sapkota'>Sapkota</div>
-              <div className='reveal-info project'>Software Developer</div>
-            </ParallaxLayer>
-          </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.7} speed={1.5} factor={1.5} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <div className="project-display">
-            <h1>Featured Projects</h1>
-            <div className="project-list">
-              {projects.projects.filter(p => p.featured).map(pro => 
-              {return <Project imgSrc={pro.img} projectName={pro.name} projectDescription={pro.description} skills={pro.skills}
-              documentation={pro.documentation} demo={pro.demo}></Project>})}
+      <div className="page-gradient" />
+      <div className="shell">
+        <header className="top-bar">
+          <a href="#" className="wordmark">
+            {PROFILE.name}
+          </a>
+          <nav>
+            {NAV_LINKS.map((link) => (
+              <a key={link.label} href={link.href} className="nav-link">
+                {link.label}
+              </a>
+            ))}
+          </nav>
+        </header>
+
+        <main>
+          <section className="hero notebook-page">
+            <p className="entry-date hero-date">
+              Last updated {PROFILE.lastUpdated} | {PROFILE.location}
+            </p>
+            <h1>{PROFILE.name}</h1>
+            <p className="hero-role">{PROFILE.role}</p>
+            <p className="hero-context">{PROFILE.context}</p>
+            <div className="link-row">
+              {EXTERNAL_LINKS.map((link) => (
+                <ExternalLink key={link.label} {...link} />
+              ))}
             </div>
-            <Link to="/project-page" className='link-app'>All Projects</Link>
-          </div>
-        </ParallaxLayer>
-      </Parallax>
+          </section>
+
+          <SectionBlock id="about" title={POSITIONING.title}>
+            <p>{POSITIONING.paragraph}</p>
+          </SectionBlock>
+
+          <SectionBlock id="work" title={CURRENT_FOCUS.title}>
+            <p className="section-subtitle">
+              <a href={CURRENT_FOCUS.companyUrl} target="_blank" rel="noreferrer">
+                {CURRENT_FOCUS.company}
+              </a>
+            </p>
+            {CURRENT_FOCUS.paragraphs.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </SectionBlock>
+
+          <SectionBlock id="rabbit-holes" title={RABBIT_HOLES_SECTION.title}>
+            <div className="rabbit-hole-list">
+              {RABBIT_HOLES.map((hole) => (
+                <p key={hole.text}>
+                  {hole.href ? (
+                    <a href={hole.href} target="_blank" rel="noreferrer">
+                      {hole.text}
+                    </a>
+                  ) : (
+                    hole.text
+                  )}
+                </p>
+              ))}
+            </div>
+          </SectionBlock>
+
+          <SectionBlock id="built" title={BUILT_SYSTEMS.title}>
+            <div className="built-grid">
+              {BUILT_SYSTEMS.items.map((item) => (
+                <article key={item.name} className="built-card">
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                </article>
+              ))}
+            </div>
+          </SectionBlock>
+        </main>
+      </div>
     </div>
   );
 }
