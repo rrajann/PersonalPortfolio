@@ -10,7 +10,8 @@ export const RABBIT_HOLES_SECTION = {
 };
 
 export const PROFILE = {
-  name: "Rajan",
+  name: "Rajan Sapkota",
+  initials: "RS",
   role: "Building Kadu Care, studying Computer Science + Business at UBC.",
   context:
     "Kadu Care builds AI systems that automate clinical workflows.",

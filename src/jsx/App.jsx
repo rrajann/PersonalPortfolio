@@ -38,7 +38,7 @@ export default function App() {
       <div className="shell">
         <header className="top-bar">
           <a href="#" className="wordmark">
-            {PROFILE.name}
+            {PROFILE.initials}
           </a>
           <nav>
             {NAV_LINKS.map((link) => (
